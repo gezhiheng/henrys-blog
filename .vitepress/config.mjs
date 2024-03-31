@@ -8,7 +8,7 @@ export default defineConfig({
   description: "Henry`s blog created by henry.ge",
   lastUpdated: true,
   head: [
-    ['link', { rel: 'icon', href: '../assets/imgs/hero.png' }],
+    ['link', { rel: 'icon', href: 'https://my-pic-base.oss-cn-beijing.aliyuncs.com/henrys-blog/imgs/hero.png' }],
     ['meta', { name: 'referrer', content: 'no-referrer'}]
   ],
   themeConfig: {
