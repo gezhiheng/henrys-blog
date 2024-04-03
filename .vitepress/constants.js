@@ -3,6 +3,7 @@ export const sidebar = [
     text: '经验分享',
     items: [
       { text: 'VSCode配置', link: '/docs/experience/VSCode配置.md' },
+      { text: 'VSCode配置', link: '/docs/experience/VSCode快速打出consolelog' },
     ]
   },
   {
