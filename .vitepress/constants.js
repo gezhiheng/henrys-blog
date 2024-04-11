@@ -4,6 +4,10 @@ export const sidebar = [
     items: [
       { text: 'VSCode配置', link: '/docs/experience/VSCode配置.md' },
       { text: 'VSCode快速打出console.log', link: '/docs/experience/VSCode快速打出consolelog' },
+      { text: '开启VPN之后提交代码的注意事项', link: '/docs/experience/开启VPN之后提交代码的注意事项.md' },
+      { text: 'Element Plus的el-input如何获取焦点', link: '/docs/experience/Element Plus的el-input如何获取焦点.md' },
+      { text: 'JavaScript闭包函数', link: '/docs/experience/JavaScript闭包函数.md' },
+      { text: 'JavaScript函数防抖', link: '/docs/experience/JavaScript函数防抖.md' },
     ]
   },
   {
