@@ -15,7 +15,7 @@ git config --global http.sslVerify "false"
 ```
 git config --global https.sslVerify "false"
 ```
-## 连接超时
+## 连接超时(设置代理)
 出现这种错误
 ```
 Failed to connect to github.com port 443 : Timed out
