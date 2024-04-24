@@ -27,7 +27,11 @@ export default defineConfig({
     footer: {
       message: 'Author @Henry Ge',
       copyright: 'Powered by VitePress & Vue'
-    }
+    },
+
+    search: {
+      provider: 'local'
+    },
   },
   
   vite: {
