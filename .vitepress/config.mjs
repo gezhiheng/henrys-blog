@@ -21,7 +21,8 @@ export default defineConfig({
     sidebar: sidebar,
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/gezhiheng' }
+      { icon: 'github', link: 'https://github.com/gezhiheng' },
+      { icon: 'twitter', link: 'https://twitter.com/henryge292035' },
     ],
 
     footer: {
