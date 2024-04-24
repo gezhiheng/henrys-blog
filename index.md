@@ -14,7 +14,7 @@ features:
   - icon: 🐛
     title: 踩坑记录
     details: 我在日常开发和学习过程中遇到的各种坑和问题，无论是技术上的bug、开发中的挑战、还是一些困惑。
-    link: /docs/bugs/JavaScript使用生成器时不写分号出现的问题
+    link: /docs/bugs/JavaScript使用生成器不写分号出现的问题
   - icon: 📖
     title: 学习笔记
     details: 学习过程中的知识点和心得体会，学习新技术、深入理解某个领域、和探索学习方法。
