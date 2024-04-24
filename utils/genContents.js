@@ -1,12 +1,11 @@
 import { readdirSync, statSync } from 'fs'
-import { join } from 'path'
 
 function genContents(path, dir = '') {
   const files = readdirSync(path)
   const contents = []
 
   files.forEach(file => {
-    const filePath = join(path, file)
+    const filePath = `${path}/${file}`
     const fileStat = statSync(filePath)
 
     if (fileStat.isDirectory()) {
@@ -15,7 +14,7 @@ function genContents(path, dir = '') {
       contents.push({
         dir,
         fileName: file,
-        filePath: filePath,
+        filePath: `/${filePath}`,
       })
     }
   })
