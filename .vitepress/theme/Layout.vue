@@ -10,6 +10,9 @@
 import DefaultTheme from 'vitepress/theme'
 import { Vue3Lottie } from 'vue3-lottie'
 import hero from '../../assets/hero.json'
+import info from '/info.txt?raw'
+
+console.log(info)
 
 const { Layout } = DefaultTheme
 </script>
