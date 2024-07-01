@@ -8,6 +8,7 @@
     "docs:preview": "vitepress preview"
   },
   "dependencies": {
+    "typeit": "^8.8.3",
     "vue3-lottie": "^3.3.0"
   }
 }
