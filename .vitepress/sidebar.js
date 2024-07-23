@@ -19,17 +19,17 @@ function genSideBar() {
       items: []
     },
     {
-      text: '关于生活',
+      text: '其他',
       collapsed: false,
-      items: [],
-    },
+      items: []
+    }
   ]
 
   const sectionIndexes = {
     experience: 0,
     bugs: 1,
     study: 2,
-    life: 3,
+    other: 3,
   }
   
   contents.forEach(item => {
