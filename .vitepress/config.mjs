@@ -8,7 +8,7 @@ export default defineConfig({
   description: "Henry`s blog created by henry.ge",
   lastUpdated: true,
   head: [
-    ['link', { rel: 'icon', href: 'https://my-pic-base.oss-cn-beijing.aliyuncs.com/henrys-blog/imgs/hero.png' }],
+    ['link', { rel: 'icon', href: '/assets/icon.png' }],
     ['meta', { name: 'referrer', content: 'no-referrer'}]
   ],
   themeConfig: {
@@ -22,7 +22,7 @@ export default defineConfig({
 
     socialLinks: [
       { icon: 'github', link: 'https://github.com/gezhiheng' },
-      { icon: 'twitter', link: 'https://twitter.com/henryge292035' },
+      { icon: 'twitter', link: 'https://x.com/h3nryge' },
     ],
 
     footer: {
