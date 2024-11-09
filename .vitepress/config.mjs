@@ -6,7 +6,6 @@ export default defineConfig({
   lang: 'zh-CN',
   title: "Henry`s Blog",
   description: "Henry`s blog created by henry.ge",
-  lastUpdated: true,
   head: [
     ['link', { 
       rel: 'icon', 
