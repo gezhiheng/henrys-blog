@@ -1,7 +1,8 @@
 <template>
   <Layout>
     <template #home-hero-image>
-      <Vue3Lottie class="hero" :animationData="hero" />
+      <div class="image-container">
+        <img src="/assets/henry.png" alt="" class="hero">
     </template>
   </Layout>
 </template>
