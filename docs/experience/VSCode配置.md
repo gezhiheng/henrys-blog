@@ -1,3 +1,6 @@
+---
+Last updated: 2023/03/18 09:45
+---
 # VSCode配置
 ## settings.json
 ```json

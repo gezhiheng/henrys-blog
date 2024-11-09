@@ -1,3 +1,6 @@
+---
+Last updated: 2024/7/10 08:16
+---
 # JavaScript中的this指向
 this指向有以下几条规律
 

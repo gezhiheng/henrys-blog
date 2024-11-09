@@ -1,3 +1,6 @@
+---
+Last updated: 2022/12/12 12:26
+---
 # JavaScript使用生成器时不写分号出现的问题
 <a name="Ad8vE"></a>
 ## 问题

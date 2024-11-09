@@ -1,3 +1,6 @@
+---
+Last updated: 2024/09/01 09:22
+---
 # 为什么Rust是开发者最青睐的语言
 
 > [原文点击这里](https://github.blog/2023-08-30-why-rust-is-the-most-admired-language-among-developers/)

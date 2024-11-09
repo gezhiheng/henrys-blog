@@ -1,3 +1,6 @@
+---
+Last updated: 2024/05/21 09:05
+---
 # Nodejs查看日志
 假如现有一个名为test01.js的文件
 ```javascript
