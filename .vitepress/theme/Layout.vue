@@ -109,7 +109,7 @@ const { Layout } = DefaultTheme
 /* Projects Section */
 .projects-container .content {
   display: flex;
-  gap: 20px;
+  gap: 28px;
 }
 
 .projects-container img {
