@@ -9,7 +9,7 @@ export default defineConfig({
   head: [
     ['link', { 
       rel: 'icon', 
-      href: 'https://my-pic-base.oss-cn-beijing.aliyuncs.com/henrysblogfavicon.png' 
+      href: 'https://my-pic-base.oss-cn-beijing.aliyuncs.com/henrys-blog/henrysblogfavicon.png' 
     }],
     ['meta', { name: 'referrer', content: 'no-referrer'}]
   ],
