@@ -47,10 +47,11 @@ const { Layout } = DefaultTheme
 </script>
 
 <style scoped>
+/* 通用样式 */
 .image-container {
   width: 100%;
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
 }
 
 .time {
@@ -64,75 +65,67 @@ const { Layout } = DefaultTheme
   width: 260px;
   border-radius: 50%;
   background-color: white;
-  padding: -100px;
+  padding: 0; /* 修正无效的负值 padding */
 }
 
 .padding {
   padding: 0 64px;
 }
 
-.posts-container {
+/* Posts Section */
+.posts-container, .projects-container {
   max-width: 1280px;
   margin: 0 auto;
   margin-top: 128px;
-
-  .content {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 28px; 
-  }
-
-  .post {
-    border-bottom: 0.1px solid var(--vp-c-text-1);
-    display: flex;
-    justify-content: space-between;
-    padding-bottom: 12px;
-
-    a {
-      font-size: 22px;
-    }
-
-    a:hover {
-      color: var(--primary-blue);
-    }
-  }
 }
 
-.posts-container > p {
+.posts-container .content {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); /* 自动适应列数 */
+  gap: 28px;
+}
+
+.post {
+  border-bottom: 1px solid var(--vp-c-text-1);
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 12px;
+}
+
+.post a {
+  font-size: 22px;
+}
+
+.post a:hover {
+  color: var(--primary-blue);
+}
+
+.posts-container > p, .projects-container > p {
   font-size: 28px;
   color: var(--vp-c-text-2);
   margin-bottom: 36px;
 }
 
-.projects-container {
-  max-width: 1280px;
-  margin: 0 auto;
-  margin-top: 128px;
-
-  .content {
-    display: flex;
-    gap: 20px;
-  }
-
-  img {
-    width: 500px;
-    height: 330px;
-    margin-bottom: 18px;
-    border-radius: 5%;
-  }
-
-  h2 {
-    font-size: 28px;
-    margin-bottom: 6px;
-  }
+/* Projects Section */
+.projects-container .content {
+  display: flex;
+  gap: 20px;
 }
 
-.projects-container > p {
+.projects-container img {
+  width: 100%; /* 图片宽度响应式 */
+  max-width: 500px;
+  height: auto;
+  margin-bottom: 18px;
+  border-radius: 5%;
+}
+
+.projects-container h2 {
   font-size: 28px;
-  color: var(--vp-c-text-2);
-  margin-bottom: 36px;
+  margin-bottom: 6px;
 }
 
+/* 响应式设计 */
 @media screen and (max-width: 960px) {
   .hero {
     height: 200px;
@@ -158,20 +151,16 @@ const { Layout } = DefaultTheme
     padding: 0 24px;
   }
 
-  .projects-container {
-    .content {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
+  .projects-container .content {
+    flex-direction: column;
+    align-items: center;
   }
 }
 
 @media screen and (max-width: 766px) {
-  .posts-container {
-    .content {
-      grid-template-columns: 1fr;
-    }
+  .posts-container .content {
+    grid-template-columns: 1fr;
   }
 }
+
 </style>
