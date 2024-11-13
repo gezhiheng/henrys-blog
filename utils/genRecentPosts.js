@@ -65,8 +65,8 @@ genRecentPosts('docs')
 
 posts.sort((a, b) => b.date - a.date)
 
-posts = posts.slice(0, 5)
+posts = posts.slice(0, 7)
 
-// console.log(posts)
+console.log(posts)
 
 export default posts

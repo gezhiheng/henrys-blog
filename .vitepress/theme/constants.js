@@ -29,6 +29,18 @@ const recentPosts =
     path: 'docs/experience/Nodejs查看日志',
     formatDate: '2024/05/21',
     date: 202405210905
+  },
+  {
+    title: 'JavaScript函数防抖',
+    path: 'docs/experience/JavaScript函数防抖',
+    formatDate: '2024/04/21',
+    date: 202404211401
+  },
+  {
+    title: '开启VPN之后提交代码的注意事项',
+    path: 'docs/experience/开启VPN之后提交代码的注意事项',
+    formatDate: '2024/04/19',
+    date: 202404191610
   }
 ]
 
