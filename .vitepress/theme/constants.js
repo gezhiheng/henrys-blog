@@ -32,4 +32,20 @@ const recentPosts =
   }
 ]
 
-export { recentPosts }
+const projects = 
+[
+  { 
+    name: '文件转档应用',
+    projectURL: 'https://github.com/gezhiheng/file-transformer-app',
+    imgURL: 'https://my-pic-base.oss-cn-beijing.aliyuncs.com/henrys-blog/project1.png',
+    tags: ['Electron', 'TypeScript', 'Vue']
+  },
+  {
+    name: 'ERP系统前端',
+    projectURL: 'https://github.com/gezhiheng/lumitek-frontend',
+    imgURL: 'https://my-pic-base.oss-cn-beijing.aliyuncs.com/henrys-blog/project2.png',
+    tags: ['JavaScript', 'Vue']
+  }
+]
+
+export { recentPosts, projects }

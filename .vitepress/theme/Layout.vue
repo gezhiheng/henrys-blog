@@ -6,13 +6,26 @@
       </div>
     </template>
     <template #home-features-after>
-      <div class="posts-container">
+      <div class="posts-container padding">
         <p>Recent posts</p>
         <div class="content">
           <div class="post" v-for="post in recentPosts">
             <a :href="post.path">{{ post.title }}</a>
             <p class="time">{{ post.formatDate }}</p>
           </div>
+        </div>
+      </div>
+      <div class="projects-container padding">
+        <p>Projects</p>
+        <div class="content">
+          <ProjectCard
+            v-for="project in projects"
+            :name="project.name" 
+            :project-url="project.projectURL" 
+            :img-url="project.imgURL" 
+            :tags="project.tags"
+            >
+          </ProjectCard>
         </div>
       </div>
     </template>
@@ -22,8 +35,9 @@
 <script setup>
 import { onMounted } from 'vue'
 import DefaultTheme from 'vitepress/theme'
+import ProjectCard from './ProjectCard.vue'
 import info from '/info.txt?raw'
-import { recentPosts } from './constants'
+import { recentPosts, projects } from './constants'
 
 onMounted(() => {
   console.log(info)
@@ -53,11 +67,14 @@ const { Layout } = DefaultTheme
   padding: -100px;
 }
 
+.padding {
+  padding: 0 64px;
+}
+
 .posts-container {
   max-width: 1280px;
   margin: 0 auto;
   margin-top: 128px;
-  padding: 0 64px;
 
   .content {
     display: grid;
@@ -87,6 +104,35 @@ const { Layout } = DefaultTheme
   margin-bottom: 36px;
 }
 
+.projects-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  margin-top: 128px;
+
+  .content {
+    display: flex;
+    gap: 20px;
+  }
+
+  img {
+    width: 500px;
+    height: 330px;
+    margin-bottom: 18px;
+    border-radius: 5%;
+  }
+
+  h2 {
+    font-size: 28px;
+    margin-bottom: 6px;
+  }
+}
+
+.projects-container > p {
+  font-size: 28px;
+  color: var(--vp-c-text-2);
+  margin-bottom: 36px;
+}
+
 @media screen and (max-width: 960px) {
   .hero {
     height: 200px;
@@ -97,7 +143,7 @@ const { Layout } = DefaultTheme
     transform: translate(-50%, -50%);
   }
 
-  .posts-container {
+  .padding {
     padding: 0 48px;
   }
 }
@@ -108,8 +154,16 @@ const { Layout } = DefaultTheme
     width: 150px;
   }
 
-  .posts-container {
+  .padding {
     padding: 0 24px;
+  }
+
+  .projects-container {
+    .content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
   }
 }
 
