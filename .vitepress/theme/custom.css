@@ -3,3 +3,7 @@
   --primary-blue: #2F80ED;
   --vp-c-indigo-1: #2F80ED;
 }
+
+a[href] {
+  transition: 0.3s;
+}
