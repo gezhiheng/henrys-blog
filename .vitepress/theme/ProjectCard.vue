@@ -82,7 +82,6 @@ const props = defineProps({
 }
 
 .rounded-lg {
- /* class tailwind */
   border-radius: 10px;
 }
 
