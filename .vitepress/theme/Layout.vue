@@ -2,7 +2,7 @@
   <Layout>
     <template #home-hero-image>
       <div class="image-container">
-        <img src="/assets/henry.png" alt="" class="hero">
+        <img src="/assets/imgs/henry.png" alt="" class="hero">
       </div>
     </template>
     <template #home-features-after>
