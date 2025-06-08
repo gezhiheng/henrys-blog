@@ -28,7 +28,7 @@ jobs:
     - name: Deploy via rsync over SSH
       uses: easingthemes/ssh-deploy@v2.1.5
       with:
-        SSH_PRIVATE_KEY: ${{ secrets.DEPLOY_SSH_KEY }}
+        SSH_PRIVATE_KEY: ${{ secrets.henrys-server }}
         REMOTE_HOST: 121.40.161.248
         REMOTE_USER: deployer
         SOURCE: .vitepress/dist/
