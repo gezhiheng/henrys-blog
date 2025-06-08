@@ -1,4 +1,3 @@
-# .github/workflows/deploy.yml
 name: Deploy to Server
 
 on:
@@ -14,16 +13,12 @@ jobs:
     - name: Checkout repo
       uses: actions/checkout@v3
 
-    - name: Install Node.js
-      uses: actions/setup-node@v3
-      with:
-        node-version: '22'
-        cache: 'pnpm'
-
-    - name: Install pnpm
+    - name: Setup Node.js and pnpm
       uses: pnpm/action-setup@v2
       with:
-        version: 10
+        version: 8
+        node-version: '20'
+        cache: 'pnpm'
 
     - name: Install dependencies and build
       run: |
