@@ -18,6 +18,7 @@ jobs:
       uses: actions/setup-node@v3
       with:
         node-version: '22'
+        cache: 'pnpm'
 
     - name: Install pnpm
       run: npm install -g pnpm
@@ -30,9 +31,9 @@ jobs:
     - name: Deploy via rsync over SSH
       uses: easingthemes/ssh-deploy@v2.1.5
       with:
-        ssh-private-key: ${{ secrets.DEPLOY_SSH_KEY }}
-        remote-user: deployer
-        server-ip: 121.40.161.248
-        remote-path: /home/deployer/projects/henrys-blog/.vitepress/dist
-        local-path: .vitepress/dist
-        rsync-options: --archive --delete --compress
+        SSH_PRIVATE_KEY: ${{ secrets.DEPLOY_SSH_KEY }}
+        REMOTE_HOST: 121.40.161.248
+        REMOTE_USER: deployer
+        SOURCE: .vitepress/dist/
+        TARGET: /home/deployer/projects/henrys-blog/.vitepress/dist/
+        ARGS: --archive --delete --compress
