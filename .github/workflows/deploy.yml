@@ -30,6 +30,8 @@ jobs:
         printf "%s\n" "$DEPLOY_SSH_KEY" > private_key.pem
         chmod 600 private_key.pem
         ssh-keygen -y -f private_key.pem > /dev/null
+
+        ssh -vvv -o StrictHostKeyChecking=no -i private_key.pem deployer@121.40.161.248 'echo "SSH OK"' || true
       env:
         DEPLOY_SSH_KEY: ${{ secrets.DEPLOY_SSH_KEY }}
 
