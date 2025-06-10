@@ -1,6 +1,12 @@
 const recentPosts = 
 [
   {
+    title: '球鞋的“黄金时代”',
+    path: 'docs/other/球鞋的“黄金时代”',
+    formatDate: '2025/06/10',
+    date: 202506100922
+  },
+  {
     title: '为什么Rust是开发者最青睐的语言',
     path: 'docs/other/为什么Rust是开发者最青睐的语言',
     formatDate: '2024/09/01',
@@ -35,15 +41,8 @@ const recentPosts =
     path: 'docs/experience/JavaScript函数防抖',
     formatDate: '2024/04/21',
     date: 202404211401
-  },
-  {
-    title: '开启VPN之后提交代码的注意事项',
-    path: 'docs/experience/开启VPN之后提交代码的注意事项',
-    formatDate: '2024/04/19',
-    date: 202404191610
   }
 ]
-
 const projects = 
 [
   { 
