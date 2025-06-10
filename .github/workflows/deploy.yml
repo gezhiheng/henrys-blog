@@ -25,10 +25,19 @@ jobs:
         pnpm install
         pnpm build
 
+    - name: 🔐 Check SSH key format
+      run: |
+        echo "$DEPLOY_SSH_KEY" > private_key.pem
+        chmod 600 private_key.pem
+        ssh-keygen -y -f private_key.pem > /dev/null
+      env:
+        DEPLOY_SSH_KEY: ${{ secrets.DEPLOY_SSH_KEY }}
+
     - name: Deploy via rsync over SSH
       uses: easingthemes/ssh-deploy@v2.1.5
       with:
-        SSH_PRIVATE_KEY: ${{ secrets.DEPLOY_SSH_KEY }}
+        ssh-private-key: |
+          ${{ secrets.DEPLOY_SSH_KEY }}
         REMOTE_HOST: 121.40.161.248
         REMOTE_USER: deployer
         SOURCE: .vitepress/dist/
