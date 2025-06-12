@@ -37,7 +37,7 @@ import { onMounted } from 'vue'
 import DefaultTheme from 'vitepress/theme'
 import ProjectCard from './ProjectCard.vue'
 import info from '/info.txt?raw'
-import { recentPosts, projects } from './constants'
+import { recentPosts, projects } from '../../data/index'
 
 onMounted(() => {
   console.log(info)

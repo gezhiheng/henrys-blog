@@ -5,7 +5,8 @@
   },
   "scripts": {
     "dev": "vitepress dev",
-    "build": "vitepress build",
+    "gen:recentPosts": "node scripts/genRecentPosts.js",
+    "build": "npm run gen:recentPosts && vitepress build",
     "preview": "vitepress preview"
   },
   "dependencies": {}

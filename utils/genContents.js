@@ -1,27 +1,29 @@
-import { readdirSync, statSync } from 'fs'
+import fs from 'fs'
+import path from 'path'
 
-function genContents(path, dir = '') {
-  const files = readdirSync(path)
+const docsDir = path.resolve(__dirname, '../docs')
+
+function getContents() {
+  const files = fs.readdirSync(docsDir)
   const contents = []
 
   files.forEach(file => {
-    const filePath = `${path}/${file}`
-    const fileStat = statSync(filePath)
+    if (!file.endsWith('.md')) return
 
-    if (fileStat.isDirectory()) {
-      contents.push(...genContents(filePath, file))
-    } else {
-      contents.push({
-        dir,
-        fileName: file,
-        filePath: `/${filePath}`,
-      })
-    }
+    const fullPath = path.join(docsDir, file)
+    const content = fs.readFileSync(fullPath, 'utf-8')
+
+    const match = content.match(/Last updated:\s*(\d{4})\/\d{2}\/\d{2}/)
+    const year = match ? match[1] : 'unknown'
+
+    contents.push({
+      year,
+      fileName: file,
+      filePath: `/${file.replace(/\.md$/, '')}`,
+    })
   })
 
   return contents
 }
 
-const contents = genContents('docs')
-
-export default contents
+export default getContents()

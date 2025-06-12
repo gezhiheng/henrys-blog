@@ -17,8 +17,13 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'Archive', link: '/docs/experience/VSCode配置.md' }
+      { text: 'Archive', link: '/docs/球鞋的“黄金时代”.md' }
     ],
+
+    docFooter: {
+      prev: false,
+      next: false
+    },
 
     sidebar: sidebar,
 

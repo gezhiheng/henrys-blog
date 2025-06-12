@@ -14,4 +14,4 @@ const projects =
   }
 ]
 
-export { recentPosts, projects }
+export { projects }
