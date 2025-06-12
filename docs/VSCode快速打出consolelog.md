@@ -26,3 +26,7 @@ Last updated: 2024/07/21 09:35
   }
 }
 ```
+
+---
+
+<div align="right">2024/07</div>

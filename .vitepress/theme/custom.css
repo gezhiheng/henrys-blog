@@ -2,8 +2,18 @@
   --vp-font-family-base: 'smiley-sans';
   --primary-blue: #2F80ED;
   --vp-c-indigo-1: #2F80ED;
+  --vp-font-size-base: clamp(14px, 1vw + 0.5rem, 18px);
+  --vp-font-size-large: clamp(18px, 2vw + 0.5rem, 24px);
 }
 
 a[href] {
   transition: 0.3s;
+}
+
+body {
+  font-size: var(--vp-font-size-base);
+}
+
+h1, h2, h3 {
+  font-size: var(--vp-font-size-large);
 }

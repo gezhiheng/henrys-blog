@@ -66,3 +66,7 @@ function* fibonacciSequence() {
 }
 ```
 所以和预想的不符合
+
+---
+
+<div align="right">2022/12</div>

@@ -19,3 +19,7 @@ node --prof test01.js
 node --prof-process isolate-000002D298AC58E0-30216-v8.log > log.txt
 ```
 然后再`log.txt`中查看会得到可读性更好的log<br />![image.png](https://cdn.nlark.com/yuque/0/2024/png/29584666/1713856278746-575ad110-1c4f-4f6a-8ee8-4f6d82b7ffc5.png#averageHue=%23232221&clientId=u3c4fa9ac-cc17-4&from=paste&height=665&id=ud951aa6f&originHeight=665&originWidth=991&originalType=binary&ratio=1&rotation=0&showTitle=false&size=62947&status=done&style=none&taskId=u24137756-930c-4ec7-bcfd-782a2f9d18e&title=&width=991)
+
+---
+
+<div align="right">2024/05</div>
