@@ -49,7 +49,7 @@ const props = defineProps({
 }
 
 .article-wrapper {
-  width: 280px;
+  width: 260px;
   -webkit-transition: 0.15s all ease-in-out;
   transition: 0.15s all ease-in-out;
   border-radius: 10px;
