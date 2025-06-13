@@ -5,7 +5,10 @@
       <div class="flex-pr">
         <div class="project-title text-nowrap">{{ props.name }}</div>
         <div class="project-hover">
-          <svg style="color: black;" xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" color="black" stroke-linejoin="round" stroke-linecap="round" viewBox="0 0 24 24" stroke-width="2" fill="none" stroke="currentColor"><line y2="12" x2="19" y1="12" x1="5"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          <svg style="color: black;" xmlns="http://www.w3.org/2000/svg" width="1.8em" height="1.8em" color="black" stroke-linejoin="round" stroke-linecap="round" viewBox="0 0 24 24" stroke-width="2" fill="none" stroke="currentColor">
+            <line y2="12" x2="19" y1="12" x1="5"></line>
+            <polyline points="12 5 19 12 12 19"></polyline>
+          </svg>
         </div>
       </div>
         <div class="types">
@@ -46,7 +49,7 @@ const props = defineProps({
 }
 
 .article-wrapper {
-  width: 250px;
+  width: 280px;
   -webkit-transition: 0.15s all ease-in-out;
   transition: 0.15s all ease-in-out;
   border-radius: 10px;
@@ -89,7 +92,6 @@ const props = defineProps({
   -webkit-transform: rotate(-45deg);
   -ms-transform: rotate(-45deg);
   transform: rotate(-45deg);
-  background-color: #a6c2f0;
 }
 
 .project-info {
@@ -106,7 +108,7 @@ const props = defineProps({
 }
 
 .project-title {
-  font-size: 2em;
+  font-size: 1.8em;
   margin: 0;
   font-weight: 600;
  /* depend de la font */
