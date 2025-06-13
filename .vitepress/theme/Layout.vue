@@ -142,6 +142,10 @@ const { Layout } = DefaultTheme
   .padding {
     padding: 0 48px;
   }
+
+  .posts-container {
+    margin-top: 64px;
+  }
 }
 
 @media screen and (max-width: 640px) {
@@ -158,11 +162,19 @@ const { Layout } = DefaultTheme
     flex-direction: column;
     align-items: center;
   }
+
+  .posts-container {
+    margin-top: 64px;
+  }
 }
 
 @media screen and (max-width: 766px) {
   .posts-container .content {
     grid-template-columns: 1fr;
+  }
+
+  .posts-container {
+    margin-top: 64px;
   }
 }
 
