@@ -69,4 +69,4 @@ function* fibonacciSequence() {
 
 ---
 
-<div align="right">2022/12</div>
+<div align="right">2022/12/12</div>

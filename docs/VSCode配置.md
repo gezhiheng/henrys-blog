@@ -43,4 +43,4 @@ Last updated: 2023/03/18 09:45
 
 ---
 
-<div align="right">2023/03</div>
+<div align="right">2023/03/18</div>

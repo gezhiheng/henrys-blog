@@ -115,4 +115,4 @@ Rust 不仅仅是为了采用一种语言，更是为了接受一种思维方式
 
 ---
 
-<div align="right">2024/09</div>
+<div align="right">2024/09/01</div>
