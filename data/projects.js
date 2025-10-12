@@ -1,7 +1,7 @@
 const projects = 
 [
   { 
-    name: 'Targiyio射击训练',
+    name: 'Targiyio',
     projectURL: 'https://showcase.gezhiheng.site/targiyio.html',
     imgURL: '/assets/imgs/targiyio.jpg',
     tags: ['Capacitor', 'Vue']
