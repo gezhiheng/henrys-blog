@@ -1,33 +1,35 @@
-import contents from '../utils/genContents'
+import contents from "../utils/genContents";
 
 function genSideBar() {
-  const sidebarMap = {}
+  const sidebarMap = {};
 
-  contents.forEach(item => {
+  contents.forEach((item) => {
     if (!sidebarMap[item.year]) {
       sidebarMap[item.year] = {
         text: `${item.year} 年`,
         collapsed: false,
-        items: []
-      }
+        items: [],
+      };
     }
 
     sidebarMap[item.year].items.push({
       text: getPrefix(item.fileName),
-      link: '/docs/' + item.filePath
-    })
-  })
+      link: "/docs/" + item.filePath,
+    });
+  });
 
-  const sidebar = Object.values(sidebarMap).sort((a, b) => b.text.localeCompare(a.text))
+  const sidebar = Object.values(sidebarMap).sort((a, b) =>
+    b.text.localeCompare(a.text)
+  );
 
-  return sidebar
+  return sidebar;
 }
 
 function getPrefix(fileName) {
-  const parts = fileName.split('.')
-  return parts.length > 1 ? parts[0] : fileName
+  // 移除文件扩展名，但保留文件名中的其他点号
+  return fileName.replace(/\.md$/, "");
 }
 
-const sidebar = genSideBar()
+const sidebar = genSideBar();
 
-export default sidebar
+export default sidebar;
