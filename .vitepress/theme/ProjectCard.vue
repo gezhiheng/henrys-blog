@@ -55,6 +55,11 @@ const props = defineProps({
   color: #ffffff;
 }
 
+.node {
+  background-color: #83cd29;
+  color: #ffffff;
+}
+
 .article-wrapper {
   width: 260px;
   -webkit-transition: 0.15s all ease-in-out;

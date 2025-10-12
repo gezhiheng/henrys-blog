@@ -7,6 +7,12 @@ const projects =
     tags: ['Capacitor', 'Vue']
   },
   { 
+    name: 'crt-fe',
+    projectURL: 'https://www.npmjs.com/package/crt-fe',
+    imgURL: '/assets/imgs/crt-fe.png',
+    tags: ['Node']
+  },
+  { 
     name: '文件转档应用',
     projectURL: 'https://github.com/gezhiheng/file-transformer-app',
     imgURL: '/assets/imgs/projects1.png',
