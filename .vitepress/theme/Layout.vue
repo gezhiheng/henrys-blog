@@ -18,13 +18,8 @@
       <div class="projects-container padding">
         <p>Projects</p>
         <div class="content">
-          <ProjectCard
-            v-for="project in projects"
-            :name="project.name" 
-            :project-url="project.projectURL" 
-            :img-url="project.imgURL" 
-            :tags="project.tags"
-            >
+          <ProjectCard v-for="project in projects" :name="project.name" :project-url="project.projectURL"
+            :img-url="project.imgURL" :tags="project.tags">
           </ProjectCard>
         </div>
       </div>
@@ -65,7 +60,8 @@ const { Layout } = DefaultTheme
   width: 260px;
   border-radius: 50%;
   background-color: white;
-  padding: 0; /* 修正无效的负值 padding */
+  padding: 0;
+  /* 修正无效的负值 padding */
 }
 
 .padding {
@@ -73,7 +69,8 @@ const { Layout } = DefaultTheme
 }
 
 /* Posts Section */
-.posts-container, .projects-container {
+.posts-container,
+.projects-container {
   max-width: 1280px;
   margin: 0 auto;
 }
@@ -84,7 +81,8 @@ const { Layout } = DefaultTheme
 
 .posts-container .content {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); /* 自动适应列数 */
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  /* 自动适应列数 */
   gap: 28px;
 }
 
@@ -96,14 +94,16 @@ const { Layout } = DefaultTheme
 }
 
 .post a {
-  font-size: 22px;
+  /* 使用变量以便统一控制，并在 mobile 覆盖 */
+  font-size: clamp(18px, 2.5vw, 22px);
 }
 
 .post a:hover {
   color: var(--primary-blue);
 }
 
-.posts-container > p, .projects-container > p {
+.posts-container>p,
+.projects-container>p {
   font-size: 28px;
   color: var(--vp-c-text-2);
   margin-bottom: 36px;
@@ -116,7 +116,8 @@ const { Layout } = DefaultTheme
 }
 
 .projects-container img {
-  width: 100%; /* 图片宽度响应式 */
+  width: 100%;
+  /* 图片宽度响应式 */
   max-width: 500px;
   height: auto;
   margin-bottom: 18px;
@@ -158,6 +159,11 @@ const { Layout } = DefaultTheme
     padding: 0 24px;
   }
 
+  /* 手机端增大文章列表标题 */
+  .post a {
+    font-size: clamp(20px, 4.5vw, 24px);
+  }
+
   .projects-container .content {
     flex-direction: column;
     align-items: center;
@@ -177,5 +183,4 @@ const { Layout } = DefaultTheme
     margin-top: 64px;
   }
 }
-
 </style>

@@ -5,15 +5,17 @@
       <div class="flex-pr">
         <div class="project-title text-nowrap">{{ props.name }}</div>
         <div class="project-hover">
-          <svg style="color: black;" xmlns="http://www.w3.org/2000/svg" width="1.8em" height="1.8em" color="black" stroke-linejoin="round" stroke-linecap="round" viewBox="0 0 24 24" stroke-width="2" fill="none" stroke="currentColor">
+          <svg style="color: black;" xmlns="http://www.w3.org/2000/svg" width="1.8em" height="1.8em" color="black"
+            stroke-linejoin="round" stroke-linecap="round" viewBox="0 0 24 24" stroke-width="2" fill="none"
+            stroke="currentColor">
             <line y2="12" x2="19" y1="12" x1="5"></line>
             <polyline points="12 5 19 12 12 19"></polyline>
           </svg>
         </div>
       </div>
-        <div class="types">
-          <span v-for="tag in props.tags" :class="tag.toLowerCase()" class="project-type">• {{ tag }}</span>
-        </div>
+      <div class="types">
+        <span v-for="tag in props.tags" :class="tag.toLowerCase()" class="project-type">• {{ tag }}</span>
+      </div>
     </div>
   </a>
 </template>
@@ -46,6 +48,11 @@ const props = defineProps({
 .typescript {
   background-color: #2f74c0;
   color: #f7f7f7;
+}
+
+.capacitor {
+  background-color: #089cff;
+  color: #ffffff;
 }
 
 .article-wrapper {
@@ -111,7 +118,7 @@ const props = defineProps({
   font-size: 1.8em;
   margin: 0;
   font-weight: 600;
- /* depend de la font */
+  /* depend de la font */
   text-overflow: ellipsis;
   white-space: nowrap;
   color: black;
