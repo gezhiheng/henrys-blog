@@ -1,5 +1,6 @@
 import { defineConfig } from 'vitepress'
 import sidebar from './sidebar'
+import { newestPostPath } from '../data'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -17,7 +18,7 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'Archive', link: '/docs/球鞋的“黄金时代”.md' }
+      { text: 'Archive', link: newestPostPath }
     ],
 
     docFooter: {

@@ -1,1 +1,1 @@
-const newestPostPath = "docs/百分之0.0001的差异"
+export const newestPostPath = "docs/百分之0.0001的差异.md"
