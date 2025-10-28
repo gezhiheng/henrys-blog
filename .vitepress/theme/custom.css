@@ -30,3 +30,21 @@ h3 {
     --vp-font-size-large: clamp(20px, 3.5vw + 0.6rem, 26px);
   }
 }
+
+/* Tablet-specific overrides: a middle step between phone and desktop */
+@media screen and (min-width: 640px) and (max-width: 959.98px) {
+  :root {
+    /* 略大于手机、略小于桌面，保持过渡自然 */
+    --vp-font-size-base: clamp(15.5px, 1.2vw + 0.55rem, 19.5px);
+    --vp-font-size-large: clamp(21px, 1.8vw + 0.55rem, 27px);
+  }
+}
+
+/* Desktop-specific overrides: bump font sizes a bit on larger screens (PC) */
+@media screen and (min-width: 960px) {
+  :root {
+    /* 在桌面端整体放大 1-2px，保持响应式比例 */
+    --vp-font-size-base: clamp(18px, 0.9vw + 0.6rem, 20px);
+    --vp-font-size-large: clamp(24px, 1.2vw + 0.6rem, 28px);
+  }
+}
