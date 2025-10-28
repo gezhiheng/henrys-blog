@@ -5,8 +5,12 @@
   },
   "scripts": {
     "dev": "vitepress dev",
+    "gen:postDate": "node scripts/genPostDate.js",
     "gen:recentPosts": "node scripts/genRecentPosts.js",
-    "build": "npm run gen:recentPosts && vitepress build",
+    "gen:newestPost": "node scripts/genNewestPost.js",
+    "gen:all": "npm run gen:postDate && npm run gen:newestPost && npm run gen:recentPosts",
+    "build": "vitepress build",
+    "build:all": "npm run gen:all && vitepress build",
     "preview": "vitepress preview"
   },
   "dependencies": {}
