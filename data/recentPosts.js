@@ -1,5 +1,11 @@
 export const recentPosts = [
   {
+    "title": "优点与缺点",
+    "path": "docs/优点与缺点",
+    "formatDate": "2025/10/29",
+    "date": 202510290000
+  },
+  {
     "title": "百分之0.0001的差异",
     "path": "docs/百分之0.0001的差异",
     "formatDate": "2025/10/12",
