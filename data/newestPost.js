@@ -1,1 +1,1 @@
-export const newestPostPath = "docs/Always stay positive about the future.md"
+export const newestPostPath = "docs/Staypositiveaboutthefuture.md"
