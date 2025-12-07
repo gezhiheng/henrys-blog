@@ -1,5 +1,11 @@
 export const recentPosts = [
   {
+    "title": "Always stay positive about the future",
+    "path": "docs/Always stay positive about the future",
+    "formatDate": "2025/12/07",
+    "date": 202512070000
+  },
+  {
     "title": "优点与缺点",
     "path": "docs/优点与缺点",
     "formatDate": "2025/10/29",
