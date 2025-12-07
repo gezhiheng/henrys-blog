@@ -2,7 +2,7 @@ import fs from 'fs'
 import path from 'path'
 
 const docsDir = path.resolve('./docs')
-const outputFile = path.resolve('./data/recentPosts.js') // 根据你项目结构调整
+const outputFile = path.resolve('./data/recentPosts.js')
 
 const now = new Date()
 
