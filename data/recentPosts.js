@@ -1,6 +1,6 @@
 export const recentPosts = [
   {
-    "title": "Always stay positive about the future",
+    "title": "Stay positive about the future",
     "path": "docs/Always stay positive about the future",
     "formatDate": "2025/12/07",
     "date": 202512070000
